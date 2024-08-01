@@ -1,6 +1,4 @@
-.active{
-    background-color: blue;
-}
+
 
 nav{
     display: flex;
@@ -21,6 +19,8 @@ nav .title{
 
 nav ul {
     display: flex;
+    gap: 30px;
+    margin-right: 20px;
 }
 
 nav ul li{
@@ -30,13 +30,14 @@ nav ul li{
 nav ul li a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0 0.5rem;
     border-radius: 0.5rem;
+    background-color: rgba(0, 150, 136, 0.7 );
 }
 
 nav ul li a:not(.active):hover{
-    background-color: blue;
+   
 }
 
 nav .menu {

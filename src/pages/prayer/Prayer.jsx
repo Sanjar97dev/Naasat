@@ -71,13 +71,13 @@ const Prayer = () => {
 
   return (
     <div className="prayer-container">
-      <h1>Намаз</h1>
+      <h1>Намаз убактылары</h1>
       <p>Саат: {formatTime(currentTime)}</p>
       <ul>
         {namaz.map((item) => (
           <li key={item.name}>
             <span>{item.label}</span>
-            {prayerTimes[item.name] || ""} 
+            {prayerTimes[item.name] || "намаз убактысы өтүү"} 
             {prayerTimes[item.name] && `  ${timeUntilNextPrayer(prayerTimes[item.name])})`}
           </li>
         ))}

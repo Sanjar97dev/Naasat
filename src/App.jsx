@@ -1,16 +1,19 @@
-import React from 'react'
-import Hero from './pages/hero/Hero'
-import Navbar from './components/navbar/Navbar'
+
+import React, { useState } from 'react';
+import Hero from './pages/hero/Hero';
+import Navbar from './components/navbar/Navbar';
+import Router from './routes/Router';
 
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className='app'>
-      <Navbar/>
-      <Hero/>
-      
+    <div className="app">
+      <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+      <Router/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
