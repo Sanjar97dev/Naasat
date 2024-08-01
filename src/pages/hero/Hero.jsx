@@ -4,6 +4,7 @@ import Prayer from '../prayer/Prayer';
 
 const Hero= () => {
 
+  
   const [naasat, setNaasat] = useState([
     {description: 'Алган илимиң бул дүйнөдө да, акыретте да пайдалуу болуусу үчүн өзүңдү жана башкаларды дагы көзөмөлгө алгын.'},
     {description: 'Көчөдө жана мечитте тамактанбагын, Жолдун боюндагы көлмө менен агын суулардан ичпегин. Жолдун ортосуна олтурбагын. Олтурууга мажбур болсоң, мечиттерге барып отургун. Дүкөндөрдө да отурбагын.'},
@@ -13,7 +14,7 @@ const Hero= () => {
 
 
   return (
-    <div className='container'>
+    <div className='container ' >
       <h1>Имам Абу Ханифанын наасаттары</h1>
       <Prayer/>
       <div className='cards'>
